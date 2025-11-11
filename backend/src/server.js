@@ -165,16 +165,16 @@ app.get('/api/admin/stats/agents', requireAdmin, async (_req, res) => {
 
 // Show login first always
 app.get('/login.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', '..', 'public', 'login.html'));
+  res.sendFile(path.join(__dirname, '../frontend/login.html'));
 });
 
 // Protect index (portfolio)
 app.get('/', requireLogin, (req, res) => {
-  res.sendFile(path.join(__dirname, '..', '..', 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
 // Serve static frontend AFTER routes
-app.use(express.static(path.join(__dirname, '..', '..', 'public')));
+app.use(express.static(path.join(__dirname, '../frontend')));
 
 // ======================
 app.listen(PORT, () => console.log(`🚀 Server running → http://localhost:${PORT}`));
