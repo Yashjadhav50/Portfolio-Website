@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1"/>
+<title>Yash Jadhav — Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="data:;base64,iVBORw0KGgo="/>
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <h1>Yash <span>Jadhav</span></h1>
+      <p class="sub">Computer Engineering</p>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="actions">
+
+      <!-- Admin -->
+      <a href="/admin.html" class="btn btn-outline">🛠 Admin</a>
+
+      <!-- Logout -->
+      <button id="logoutBtn" class="btn btn-ghost">Logout</button>
+
+      <!-- Resume -->
+      <a class="btn btn-outline" download href="Resume Yash Ashok Jadhav.pdf">📄 Resume</a>
+
+      <!-- ✅ Theme Toggle (Handled by app.js) -->
+      <button aria-label="Toggle theme" id="themeToggle" class="icon-btn">🌞</button>
+
+      <button aria-label="Open menu" class="icon-btn burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+<div class="container hero-inner">
+
+<div class="hero-content">
+<h2 id="typewriter">Hi, I am <span>Yash Jadhav</span></h2>
+<p class="lead">Computer Engineering student at MMIT.<br>Driven to grow and learn new technologies.</p>
+
+<div class="hero-cta">
+<a class="btn" href="#projects">View Projects</a>
+<a class="btn btn-ghost" download href="Resume Yash Ashok Jadhav.pdf">Download CV</a>
+</div>
+
+<ul class="hero-info">
+<li><strong>Phone:</strong> +91-7558511448</li>
+<li><strong>Email:</strong> <a href="mailto:yashjadhav654321@gmail.com">yashjadhav654321@gmail.com</a></li>
+<li><strong>Location:</strong> Pune, India</li>
+</ul>
+
+<div class="social">
+<a href="https://www.linkedin.com/in/yash-jadhav-50b3a934b/" target="_blank">LinkedIn</a>
+<a href="https://github.com/YashJadhav50" target="_blank">GitHub</a>
+</div>
+</div>
+
+<div class="hero-card">
+<div class="card-profile">
+<div class="avatar">YJ</div>
+<div class="card-meta">
+<h3>Yash Ashok Jadhav</h3>
+<p>B.E. Computer Engineering (MMIT)</p>
+<p class="muted">DOB: 14 December 2004</p>
+</div>
+<div class="card-stats">
+<div><strong>GPA:</strong><span>73.72%</span></div>
+<div><strong>Languages:</strong><span>English, Hindi, Marathi</span></div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- About -->
+<section class="section container" id="about">
+<div class="section-grid">
+<div>
+<h3>About Me</h3>
+<p>I’m pursuing a Bachelor of Engineering in Computer Engineering at Marathwada Mitra Mandal’s Institute of Technology, Lohagaon.</p>
+<br>
+<h4>Curricular Activities & Workshops</h4>
+<ul class="bullets">
+<li>Led the football team as captain in Savitribai Phule Pune University inter-college matches.</li>
+<li>Mastercard Cybersecurity virtual experience (Forage) — security awareness & threat identification.</li>
+<li>Workshops: Big Data Analytics with Hadoop (Apr 4, 2025).</li>
+</ul>
+</div>
+
+<div class="skills-panel">
+<h4>Quick Facts</h4>
+<table class="facts">
+<tr><td><strong>Branch</strong></td><td>Computer Engineering</td></tr>
+<tr><td><strong>Email</strong></td><td>yashjadhav654321@gmail.com</td></tr>
+<tr><td><strong>Phone</strong></td><td>+91-7558511448</td></tr>
+<tr><td><strong>Location</strong></td><td>Pune, India</td></tr>
+</table>
+</div>
+</div>
+</section>
+
+<!-- Skills -->
+<section class="section alt container" id="skills">
+<h3>Skills & Technologies</h3>
+<div class="skills-grid">
+<div class="skill"><h5>Languages</h5><p>C++, Java, Python</p></div>
+<div class="skill"><h5>Web</h5><p>HTML, CSS, JavaScript, React</p></div>
+<div class="skill"><h5>Database & OS</h5><p>MySQL, Windows, Linux, Ubuntu</p></div>
+<div class="skill"><h5>Other</h5><p>Git, Data Analysis, Security Awareness</p></div>
+</div>
+</section>
+
+<!-- Soft Skills -->
+<section class="section container" id="soft-skills">
+<h3>Soft Skills</h3>
+<div class="soft-skills-grid">
+<div class="soft-skill">Problem Solving</div>
+<div class="soft-skill">Teamwork</div>
+<div class="soft-skill">Flexibility</div>
+<div class="soft-skill">Adaptability</div>
+<div class="soft-skill">Time Management</div>
+<div class="soft-skill">Leadership</div>
+<div class="soft-skill">Continuous Learning</div>
+</div>
+</section>
+
+<!-- Projects -->
+<section class="section container" id="projects">
+<h3>Projects</h3>
+<div class="projects-grid">
+<div class="project-card">
+<h4>Snakes & Ladders</h4>
+<p>Developed a digital Snakes &amp; Ladders game using Python, implementing core game logic and collaborating via Git for version control.</p>
+<div class="project-meta"><span>Python</span><span>Team</span></div>
+</div>
+<div class="project-card">
+<h4>Non-Scientific Calculator</h4>
+<p>Simple calculator to perform basic arithmetic operations as part of academic projects.</p>
+<div class="project-meta"><span>Java</span><span>Academic</span></div>
+</div>
+<div class="project-card muted">
+<h4>More Work Coming Soon</h4>
+<p>I'm actively building additional projects — check back soon or view my GitHub.</p>
+<a class="link" href="https://github.com/YashJadhav50" rel="noopener" target="_blank">View GitHub</a>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section class="section alt container" id="contact">
+<h3>Contact Me</h3>
+<div class="contact-grid">
+  <div>
+<ul class="contact-list">
+<li><strong>Email:</strong> <a href="mailto:yashjadhav654321@gmail.com">yashjadhav654321@gmail.com</a></li>
+<li><strong>Phone:</strong> +91-7558511448</li>
+<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yash-jadhav-50b3a934b/" rel="noopener" target="_blank">LinkedIn Profile</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/Yashjadhav50" rel="noopener" target="_blank">github.com/Yashjadhav50</a></li>
+</ul>
+</div>
+<div>
+<form action="https://formspree.io/f/mqalqkpg" method="POST" class="contact-form">
+<input type="text" name="name" placeholder="Your name" required>
+<input type="email" name="email" placeholder="Your email" required>
+<textarea name="message" rows="5" placeholder="Message..." required></textarea>
+<button class="btn" type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+
+<footer class="site-footer">
+<div class="container">
+<p>© 2025 Yash Jadhav. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+    // Typewriter effect
+    const phrases = ['Hi, I am Yash Jadhav.', 'Future Engineer.'];
+    let idx = 0, pos = 0, forward = true;
+    const el = document.getElementById('typewriter');
+    function tick() {
+      const full = phrases[idx];
+      if (forward) {
+        pos++;
+        el.textContent = full.slice(0, pos);
+        if (pos === full.length) { forward = false; setTimeout(tick, 900); return; }
+      } else {
+        pos--;
+        el.textContent = full.slice(0, pos);
+        if (pos === 0) { forward = true; idx = (idx + 1) % phrases.length; }
+      }
+      setTimeout(tick, forward ? 60 : 40);
+    }
+    tick();
+</script>
+
+<!-- ✅ Theme + Logout Logic -->
+<script src="/app.js"></script>
+
+</body>
+</html>
