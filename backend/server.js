@@ -3,8 +3,17 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import mysql from 'mysql2/promise';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { fileURLToPath } from 'url';
+import cors from "cors";
+
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://portfolio-yashjadhav.netlify.app/"
+  ],
+  credentials: true
+}));
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -67,7 +76,11 @@ app.use(session({
   secret: process.env.SESSION_SECRET || 'demo-secret-key',
   resave: false,
   saveUninitialized: false,
-  cookie: { maxAge: 86400000 }
+  cookie: {
+    maxAge: 86400000,
+    sameSite: 'none',
+    secure: true
+  }
 }));
 
 function requireLogin(req, res, next) {
