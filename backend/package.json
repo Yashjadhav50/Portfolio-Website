@@ -2,10 +2,10 @@
   "name": "portfolio-backend",
   "version": "1.0.0",
   "type": "module",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "node src/server.js",
-    "start": "NODE_ENV=production node src/server.js"
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
