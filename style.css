@@ -266,7 +266,7 @@ body.dark .contact-form input, body.dark .contact-form textarea{
   }
 }
 
-/* Tablets & small laptops */
+/*Tablets & small laptops */
 @media (max-width: 768px) {
   .section-grid {
     grid-template-columns: 1fr;
