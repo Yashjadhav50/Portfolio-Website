@@ -193,7 +193,6 @@ body.dark .contact-form input, body.dark .contact-form textarea{
 /* Footer */
 .site-footer{padding:1rem 0;text-align:center;color:var(--muted);border-top:1px solid rgba(0,0,0,0.03)}
 
-
 /* Soft Skills */
 .soft-skills-grid {
   display: grid;
