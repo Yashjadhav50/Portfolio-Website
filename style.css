@@ -278,7 +278,6 @@ body.dark .contact-form input, body.dark .contact-form textarea{
     grid-template-columns: 1fr 1fr;
   }
 }
-
 /*Very large screens */
 @media (min-width: 1400px) {
   body {
